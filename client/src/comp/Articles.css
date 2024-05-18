@@ -1,0 +1,53 @@
+.uull {
+    width: 200px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.8);
+    border: 2px solid #333;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.uull:hover {
+    border: 2px solid #000;
+    transform: scale(1.05);
+}
+
+.uull:active {
+    transform: scale(0.95) rotateZ(3deg);
+}
+
+.qwqw {
+    width: 10em;
+    height: 3em;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #666;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px #999;
+}
+
+.qwqw::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.qwqw:hover::before {
+    width: 100%;
+}
